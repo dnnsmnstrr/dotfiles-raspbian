@@ -47,7 +47,7 @@ Close and reopen terminal to complete `oh-my-zsh` install.
 
 Clone this repo.
 
-    git clone https://github.com/joshukraine/dotfiles-raspbian.git ~/.dotfiles
+    git clone https://github.com/dnnsmnstrr/dotfiles-raspbian.git ~/.dotfiles
 
 Symlink the rc files.
 
