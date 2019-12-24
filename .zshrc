@@ -68,7 +68,7 @@ ZSH_THEME="random"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, pip, pod, thefuck, sudo, python)
+plugins=(pip)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias update="sudo apt-get update && sudo apt-get upgrade -y"
