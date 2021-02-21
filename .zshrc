@@ -97,4 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias update="sudo apt-get update && sudo apt-get upgrade -y"
+source ~/.bash_aliases

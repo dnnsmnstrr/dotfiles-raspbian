@@ -1,0 +1,45 @@
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+# Reload the shell (i.e. invoke as a login shell)
+alias reload='exec ${SHELL} -l'
+
+alias c="clear"
+alias x="exit"
+alias rl="reload"
+
+alias dt="cd ~/Desktop"
+alias doc="cd ~/Documents"
+alias dotfiles="cd ~/.dotfiles"
+alias bootstrap="source ~/.dotfiles/bootstrap.sh"
+# Get week number
+alias week='date +%V'
+alias kw='week'
+
+## Git
+alias g="git"
+alias gc="git clone "
+alias undopush="git push -f origin HEAD^:master"
+alias master="git checkout master"
+alias ungit="find . -name '.git' -exec rm -rf {} \;" # Remove git from a project
+alias rmds="find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch" # Remove all .DS_Store files from a project
+alias depp='git '
+
+# npm
+alias ni='npm install'
+alias ns='npm start'
+alias nid='npm install --save-dev'
+alias nig='npm install --global'
+alias nt='npm test'
+alias nit='npm install && npm test'
+alias nr='npm run'
+alias ns='npm start'
+alias nrm='rm -rf node_modules && npm install'
+alias npl='npm list --global --depth=0'
+alias nhg='npm-home -g'
+alias nhy='npm-home -y'
+# npx
+alias cra='npx create-react-app '
+alias me='npx dnnsmnstrr'
+
+alias update="sudo apt update && sudo apt full-upgrade -y"
+
