@@ -1,12 +1,12 @@
-# My Raspbian Dotfiles and General Setup
+# My Raspberry Pi OS Dotfiles and General Setup
 
-This the general setup I use on my Raspberry Pi B+ running Raspbian. In addition to instructions relating to the installation and use of the dotfiles, I've also added quite a bit of extra info on how I setup a Pi from scratch. Obviously, there are many ways to go about this depending on how you plan to use your Pi, but these are general steps that I use commonly and are mainly included here for my own convenience.
+This the general setup I use on Raspberry Pi OS. In addition to instructions relating to the installation and use of the dotfiles, I've also added quite a bit of extra info on how I setup a Pi from scratch. Obviously, there are many ways to go about this depending on how you plan to use your Pi, but these are general steps that I use commonly and are mainly included here for my own convenience.
 
-The dotfiles themselves have been adapted from my [OS X setup](https://github.com/joshukraine/dotfiles). Comments and suggestions welcome. :)
+The dotfiles themselves have been adapted from my [OS X setup](https://github.com/dnnsmnstrr/dotfiles). Comments and suggestions welcome. :)
 
 ### Setting up the Pi
 
-[Flash the SD card](http://www.raspberrypi.org/documentation/installation/installing-images/README.md) with the [latest Raspbian image](http://www.raspberrypi.org/downloads/).
+[Flash the SD card](http://www.raspberrypi.org/documentation/installation/installing-images/README.md) with the [latest Raspbian image](http://www.raspberrypi.org/downloads/). [Berryboot](https://www.berryterminal.com/doku.php/berryboot) is useful if you want multiple operating systems.
 
 Boot the Pi from the new card and run through the initial config.
 
@@ -59,20 +59,7 @@ Symlink the rc files.
     ln -nfs ~/.dotfiles/vimrc ~/.vimrc
     ln -nfs ~/.dotfiles/zshrc ~/.zshrc
     source ~/.zshrc
-
-Set up the `~/.vim/bundle` directory needed by the [Vundle](https://github.com/gmarik/Vundle.vim) plugin manager.
-
-    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-    
-Set up a `~/.tmp` directory (needed by `vim`)
-
-    mkdir ~/.tmp
-
-
-Install `vim` plugins with [Vundle](https://github.com/gmarik/Vundle.vim).
-
-    vim +PluginInstall +qall
-    
+  
 ### Rbenv Setup
 
 These are the steps that worked for to get [`rbenv`](https://github.com/sstephenson/rbenv) working on the Pi.
